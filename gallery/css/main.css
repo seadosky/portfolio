@@ -1,0 +1,13 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual {}
+
+@media screen and (max-width:1320px){}
+
+@media screen and (max-width:1024px){}
+
+@media screen and (max-width:768px){}
+   
+   
