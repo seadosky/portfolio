@@ -2,7 +2,69 @@
 @import url(common.css);
 @import url(layout.css);
 
-.visual {}
+.visual {
+    position: relative;
+}
+.visual .swiper {
+    height: 870px;
+}
+.swiper-slide img { 
+    display:block; width:100%; height:100%; object-fit:cover; 
+}
+.visual ul li .tit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1280px;
+    z-index: 10;
+    color: #fff;
+    font-size: 17px;
+}
+.visual ul li .tit .cate {
+    color: #080413;
+    background-color: #fff;
+    padding: 6px 16px;
+    display: inline-block;
+}
+.visual ul li .tit .date {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin: 13px 0 12px 0;
+}
+.visual ul li .tit h2 {
+    font-size: 70px;
+    line-height: 1.2;
+}
+.visual ul li .tit h2 strong {
+    font-weight: 700;
+}
+.visual ul li .tit a {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 17px;
+    border: 1px solid #fff;
+    padding: 15px 64px 15px 38px;
+}
+.visual ul li .tit a span {
+    position: relative;
+}
+.visual ul li .tit a span::after {
+    position: absolute;
+    left: 82px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.1715 12.0007L8.22168 7.05093L9.6359 5.63672L15.9999 12.0007L9.6359 18.3646L8.22168 16.9504L13.1715 12.0007Z' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
+}
+.visual ul li .photo {}
+
+
 
 @media screen and (max-width:1320px){}
 
