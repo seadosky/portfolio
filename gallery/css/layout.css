@@ -21,7 +21,7 @@
     display: block;
     font-size: 0;
     line-height: 0;
-    background: url(../images/logo_w.svg) no-repeat center center / contain;
+    background: url(../images/common/logo_w.svg) no-repeat center center / contain;
 }
 .header .gnb .gnb_open,
 .header .gnb .gnb_close {

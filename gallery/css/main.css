@@ -386,10 +386,10 @@
     margin-right: 1px;
 }
 .exh .swiper .exh_info.arttech::after{
-    background-image: url(../images/exh01.png);
+    background-image: url(../images/main/exh01.png);
 }
 .exh .swiper .exh_info.artview::after{
-    background-image: url(../images/exh02.png);
+    background-image: url(../images/main/exh02.png);
 }
 .exh .swiper .exh_info .exh_detail .exh_place {
     margin-bottom: 52px;
@@ -618,3 +618,31 @@
         line-height: 40px;
     }
 }
+.arts {
+    margin-top: 165px;
+    background: url(../images/main/arts_bg.png) no-repeat center center / cover;
+    color: #fff;
+}
+.arts .tit {
+    text-align: center;
+    padding-top: 110px;
+}
+.arts .tit strong {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+.arts .tit h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.arts .list {
+    padding-bottom: 175px;
+}
+.arts .list .swiper ul li a .photo img {
+    margin-bottom: 10px;
+}
+.arts .list .swiper ul li a strong {
+    font-size: 18px;
+}
+
