@@ -1,11 +1,4 @@
 $(document).ready(function(){
-    
-    $('.header .gnb .gnb_open').on('click', function(){
-        $('.header').addClass('menu_open')
-    })
-    $('.header .gnb .gnb_close').on('click', function(){
-        $('.header').removeClass('menu_open')
-    })
 
     const visual_swiper = new Swiper('.visual .swiper', { 
 
@@ -30,8 +23,8 @@ $(document).ready(function(){
 	loop: true,  
 
 	navigation: {  
-		nextEl: '.button_prev',  
-		prevEl: '.button_next',  
+		nextEl: '.exh .button_next',  
+		prevEl: '.exh .button_prev',  
 	},
 
 });
