@@ -11,12 +11,17 @@ $(document).ready(function(){
 
 	loop: true, 
 
+	pagination: { 
+	el: '.visual .pagination', 
+	clickable: true,  
+	},
+
     });
 
     const exh_swiper = new Swiper('.exh .swiper', { 
 
 	autoplay: {  
-		delay: 2500,
+		delay: 3500,
 		disableOnInteraction: true,
 	},
 
