@@ -35,6 +35,13 @@ $(document).ready(function(){
 });
 
 const arts_swiper = new Swiper('.arts .swiper', { 
+
+	autoplay: { 
+		delay: 5000,
+		disableOnInteraction: true,
+	},
+
+
 	slidesPerView: 1, 
 	spaceBetween: 12, 
 	breakpoints: {
@@ -72,7 +79,19 @@ const arts_swiper = new Swiper('.arts .swiper', {
 	},
 });
 
+$('.gal .notice > ul > li ').on('click', function(){
+	$('.gal .notice > ul > li ').removeClass('active')
+	$(this).addClass('active')
+})
+
 const gal_swiper = new Swiper('.gal .collect .swiper', { 
+
+	effect: "fade",
+
+	autoplay: { 
+		delay: 5000,
+		disableOnInteraction: true,
+	},
 
 	loop: true,  
 
