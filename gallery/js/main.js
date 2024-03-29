@@ -72,4 +72,15 @@ const arts_swiper = new Swiper('.arts .swiper', {
 	},
 });
 
+const gal_swiper = new Swiper('.gal .collect .swiper', { 
+
+	loop: true,  
+
+	navigation: {  
+		nextEl: '.gal .collect .button_next',  
+		prevEl: '.gal .collect .button_prev',  
+	},
+
+});
+
 })//document.ready
