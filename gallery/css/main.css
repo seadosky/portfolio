@@ -1267,6 +1267,19 @@
         width: 100%;
         height: 465px;
     }
+    .gal .notice strong {
+        font-size: 16px;
+    }
+    .gal .notice > ul > li > h3 {
+        font-size: 30px;
+        padding-right: 30px;
+    }
+    .gal .notice > ul > li:first-child > h3 > span::after {
+        height: 24px;
+    }
+    .gal .notice > ul > li .detail {
+        top: 75px;
+    }
     .gal .notice > ul > li .detail .info_main .date {
         padding: 10px 5px 0 7px;
         margin: 34px 0 0 40px;
@@ -1280,7 +1293,13 @@
         margin: 35px 40px 0 20px;
     }
     .gal .collect {
-        margin-top: 50px;
+        margin-top: 30px;
         width: 100%;
+    }
+    .gal .collect strong {
+        font-size: 16px;
+    }
+    .gal .collect h3 {
+        font-size: 30px;
     }
 }

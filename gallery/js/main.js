@@ -88,11 +88,6 @@ const gal_swiper = new Swiper('.gal .collect .swiper', {
 
 	effect: "fade",
 
-	autoplay: { 
-		delay: 5000,
-		disableOnInteraction: true,
-	},
-
 	loop: true,  
 
 	navigation: {  
