@@ -712,7 +712,7 @@
     .exh .swiper .exh_info::after {
         position: absolute;
         left: calc(50% - 3px);
-        top: px;
+        top: 2px;
     }
     .exh .swiper .exh_info .exh_detail .exh_place {
         margin-bottom: 25px;
