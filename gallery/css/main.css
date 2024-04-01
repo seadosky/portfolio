@@ -302,7 +302,7 @@
 .info .info_cts01 .info_fee strong::before{
     position: absolute;
     left: 0;
-    top: 0;
+    top: -1px;
     width: 24px;
     height: 24px;
     content: "";
@@ -386,6 +386,9 @@
     .info .info_cts01 {
         justify-content: space-evenly;
     }
+    .info .info_cts01 strong {
+        font-size: 18px;
+    }
     .info .info_cts01 .info_time {
         margin-right: 20px;
         padding-right: 55px;
@@ -409,7 +412,8 @@
 
 @media screen and (max-width:500px){
     .info .info_cts01 strong {
-        font-size: 18px;
+        font-size: 17px;
+        padding-left: 20px;
     }
     .info .info_cts01 .info_time {
         margin-right: 16px;
@@ -420,6 +424,13 @@
         padding-right: 35px;
         width: calc(50% - 20px);
     } 
+    .info .info_cts01 .info_time strong::before,
+    .info .info_cts01 .info_fee strong::before {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    background-size: 18px auto;
+} 
     .info .info_cts02 .info_view,
     .info .info_cts02 .info_visit {
         font-size: 16px;
@@ -698,6 +709,11 @@
         padding: 25px 15px;
         height: 200px;
     }
+    .exh .swiper .exh_info::after {
+        position: absolute;
+        left: calc(50% - 3px);
+        top: 2px;
+    }
     .exh .swiper .exh_info .exh_detail .exh_place {
         margin-bottom: 25px;
     }
@@ -952,7 +968,9 @@
         text-align: center;
         font-size: 15px;
         padding: 0;
-        margin: 35px 0 0 43%;
+        margin: 35px 0 0 0;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     .arts .more a span::after {
         display: none;
@@ -984,10 +1002,7 @@
     }
     .arts .list .swiper .button_prev,
     .arts .list .swiper .button_next {
-        top: 35%;
-        left: 0;
-        width: 50px;
-        height: 50px;
+        display: none;
     }
     .arts .list .swiper .button_next {
         left: auto;
@@ -1000,7 +1015,9 @@
         text-align: center;
         font-size: 15px;
         padding: 0;
-        margin: 25px 0 0 40%;
+        margin: 25px 0 0 0;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
 
@@ -1064,7 +1081,7 @@
     height: 86px;
     border: 5px solid #ededed;
     border-radius: 5px;
-    padding: 10px 1%;
+    padding: 10px 5px 0 8px;
     margin: 34px 0 0 40px;
 }
 .gal .notice > ul > li .detail .info_main .date a strong {
