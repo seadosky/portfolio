@@ -674,11 +674,11 @@
     .exh .swiper .exh_info .exh_detail .exh_place .room2 {
         padding: 7px 16px;
     }
-    .exh .swiper .exh_info .exh_detail strong {
+    .exh .swiper .exh_info .exh_detail h4 {
         font-size: 24px; 
         line-height: 1.2;
         height: 2.4em; 
-        width: 200px;
+        width: 179px;
         display: block;
     }
     .exh .swiper .exh_info .exh_detail p {
@@ -727,7 +727,7 @@
     .exh .swiper .exh_info.artview .exh_place .room1 {
         display: none;
     }
-    .exh .swiper .exh_info .exh_detail strong {
+    .exh .swiper .exh_info .exh_detail h4 {
         font-size: 20px; 
         line-height: 1.2;
         height: 2.4em; 
