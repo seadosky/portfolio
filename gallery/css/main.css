@@ -514,7 +514,7 @@
     color: #080413;
     padding: 8px 17px;
 }
-.exh .swiper .exh_info .exh_detail strong {
+.exh .swiper .exh_info .exh_detail h4 {
     font-size: 25px;
     font-weight: 700;
 }
@@ -712,7 +712,7 @@
     .exh .swiper .exh_info::after {
         position: absolute;
         left: calc(50% - 3px);
-        top: 2px;
+        top: px;
     }
     .exh .swiper .exh_info .exh_detail .exh_place {
         margin-bottom: 25px;
@@ -1076,6 +1076,9 @@
     display: flex;
     justify-content: space-between;
 }
+.gal .notice > ul > li .detail .info_main a {
+    display: block;
+}
 .gal .notice > ul > li .detail .info_main .date {
     width: 86px;
     height: 86px;
@@ -1084,7 +1087,7 @@
     padding: 10px 5px 0 8px;
     margin: 34px 0 0 40px;
 }
-.gal .notice > ul > li .detail .info_main .date a strong {
+.gal .notice > ul > li .detail .info_main .date strong {
     font-size: 30px;
     font-weight: 700;
     padding: 0 10px 2px 10px;
@@ -1093,14 +1096,14 @@
     width: 530px;
     margin: 44px 40px 0 0;
 }
-.gal .notice > ul > li .detail .info_main .main_tit a strong {
+.gal .notice > ul > li .detail .info_main .main_tit strong {
     font-size: 20px;
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.gal .notice > ul > li .detail .info_main .main_tit a p {
+.gal .notice > ul > li .detail .info_main .main_tit p {
     margin: 5px 0 0 0;
 }
 .gal .notice > ul > li .detail .info_sub {
@@ -1412,7 +1415,7 @@
     }
     .gal .notice > ul > li .detail .info_main .main_tit a strong {
         font-size: 16px;
-        white-space: wrap;
+        white-space: normal;
     }
     .gal .notice > ul > li .detail .info_main .main_tit a p {
         line-height: 1.2;
