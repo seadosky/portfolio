@@ -189,18 +189,192 @@
 }
    
 .footer {
-    height: 1000px;
+    background-color: #080413;
+    color: rgba(255, 255, 255, 0.8);
+}
+.footer .f_top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    position: relative;
+}
+.footer .f_top::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+}
+.footer .f_top .f_nav ul {
+    display: flex;
+    margin: 9px 0 25px 0;
+}
+.footer .f_top .f_nav ul li {
+    margin-right: 38px;
+    position: relative;
+}
+.footer .f_top .f_nav ul li::after {
+    position: absolute;
+    right: -19px;
+    top: 5px;
+    width: 1px;
+    height: 9px;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+}
+.footer .f_top .f_nav ul li:last-child:after {
+    display: none;
+}
+.footer .f_top .f_nav ul li.privacy {
+    font-weight: 700;
+}
+.footer .f_top .sns ul {
+    display: flex;
+}
+.footer .f_top .sns ul li {
+    margin-left: 5px;
+}
+.footer .f_btm {
+    display: flex;
+    margin-top: 25px;
+}
+.footer .f_btm .f_info {
+    width: 530px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 120px;
+}
+.footer .f_btm .f_info strong {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+.footer .f_btm .f_info span {
+    margin-right: 38px;
+    position: relative;
+    line-height: 25px;
+}
+.footer .f_btm .f_info span::after {
+    position: absolute;
+    right: -19px;
+    top: 5px;
+    width: 1px;
+    height: 9px;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+    display: none;
+}
+.footer .f_btm .f_info span.address::after,
+.footer .f_btm .f_info span.fax::after,
+.footer .f_btm .f_info span.mp::after {
+    display: block;
 }
 
-
-.footer{
-
+.footer .f_btm .f_info span.copyright {
+    margin: 20px 0 50px 0;
+    display: block;
 }
 
-@media screen and (max-width:1320px){}
+@media screen and (max-width:1320px){
+    .footer .f_btm .f_logo img {
+        width: 90%;
+    }
+}
 
-@media screen and (max-width:1024px){}
+@media screen and (max-width:1024px){
+    .footer .f_btm .f_logo img {
+        width: 80%;
+    }
+    .footer .f_btm .f_info {
+        margin-left: 5px;
+    }
+    .footer .f_btm .f_info strong {
+        font-size: 17px;
+    }
+    .footer .f_btm .f_info span.copyright {
+        margin: 15px 0 40px 0;
+        display: block;
+    }
+}
 
-@media screen and (max-width:768px){}
+@media screen and (max-width:768px){
+    .footer .f_top {
+        display: block;
+        padding-top: 25px;
+    }
+    .footer .f_top::after {
+        bottom: -15px;
+    }
+    .footer .f_top .f_nav ul {
+        margin: 0 0 15px 0;
+    }
+    .footer .f_top .f_nav ul li {
+        margin-right: 30px;
+    }
+    .footer .f_top .f_nav ul li::after {
+        right: -15px;
+    }
+    .footer .f_top .sns ul {
+        display: flex;
+        justify-content: left;
+    }
+    .footer .f_top .sns ul li img {
+        width: 28px;
+    }
+    .footer .f_btm .f_logo {
+        display: none;
+    }
+    .footer .f_btm .f_info {
+        width: 500px;
+        margin: 0;
+    }
+    .footer .f_btm .f_info strong {
+        font-size: 16px;
+    }
+    .footer .f_btm .f_info span {
+        margin-right: 30px;
+    }
+    .footer .f_btm .f_info span::after {
+        position: absolute;
+        right: -15px;
+    }
+}
 
-@media screen and (max-width:500px){}
+@media screen and (max-width:500px){
+    .footer .f_top .f_nav ul li.sitemap {
+        display: none;
+    }
+    .footer .f_top .f_nav ul li.way::after {
+        display: none;
+    }
+    .footer .f_top .f_nav ul li::after {
+        right: -15px;
+        top: 3px;
+    }
+    .footer .f_btm .f_info {
+        width: 285px;
+    }
+    .footer .f_btm .f_info strong {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .footer .f_btm .f_info span {
+        margin-right: 20px;
+    }
+    .footer .f_btm .f_info span::after {
+        right: -12px;
+        top: 3px;
+    }
+    .footer .f_btm .f_info span.address::after,
+    .footer .f_btm .f_info span.fax::after {
+        display: none;
+    }
+    .footer .f_btm .f_info span.tel::after {
+        display: block;
+    }
+    .footer .f_btm .f_info span.copyright {
+        margin: 20px 0 40px 0;
+    }
+}
