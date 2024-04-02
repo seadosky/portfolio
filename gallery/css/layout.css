@@ -308,6 +308,7 @@
         bottom: -15px;
     }
     .footer .f_top .f_nav ul {
+        justify-content: center;
         margin: 0 0 15px 0;
     }
     .footer .f_top .f_nav ul li {
@@ -318,10 +319,13 @@
     }
     .footer .f_top .sns ul {
         display: flex;
-        justify-content: left;
+        justify-content: center;
     }
     .footer .f_top .sns ul li img {
         width: 28px;
+    }
+    .footer .f_btm {
+        justify-content: center;
     }
     .footer .f_btm .f_logo {
         display: none;
@@ -329,6 +333,7 @@
     .footer .f_btm .f_info {
         width: 500px;
         margin: 0;
+        text-align: center;
     }
     .footer .f_btm .f_info strong {
         font-size: 16px;
@@ -360,7 +365,7 @@
     }
     .footer .f_btm .f_info strong {
         font-size: 15px;
-        margin-top: 8px;
+        margin: 8px 0 5px 0;
     }
     .footer .f_btm .f_info span {
         margin-right: 20px;
