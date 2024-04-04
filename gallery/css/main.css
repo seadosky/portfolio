@@ -837,15 +837,15 @@
     .arts .list .swiper .button_prev,
     .arts .list .swiper .button_next {
         position: absolute;
-        left: 5%;
+        left: 2%;
         top: 35%;
         z-index: 10;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
     .arts .list .swiper .button_next {
         left: auto;
-        right: 5%;
+        right: 2%;
     }
     .arts .more a {
         top: -95px;
@@ -867,14 +867,13 @@
     }
     .arts .list .swiper .button_prev,
     .arts .list .swiper .button_next {
-        left: 2%;
-        top: 35%;
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
+        left: 1%;
     }
     .arts .list .swiper .button_next {
         left: auto;
-        right: 2%;
+        right: 1%;
     }
     .arts .more a {
         top: -95px;
@@ -907,14 +906,14 @@
     }
     .arts .list .swiper .button_prev,
     .arts .list .swiper .button_next {
-        left: 20px;
+        left: 10px;
         top: 35%;
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
     }
     .arts .list .swiper .button_next {
         left: auto;
-        right: 20px;
+        right: 10px;
     }
     .arts .more a {
         top: -84px;
@@ -954,9 +953,13 @@
     }
     .arts .list .swiper .button_prev,
     .arts .list .swiper .button_next {
-        top: 35%;
+        left: 5px;
         width: 50px;
         height: 50px;
+    }
+    .arts .list .swiper .button_next {
+        right: 5px;
+        left: auto;
     }
     .arts .more a {
         position: relative;
@@ -1002,11 +1005,9 @@
     }
     .arts .list .swiper .button_prev,
     .arts .list .swiper .button_next {
-        display: none;
-    }
-    .arts .list .swiper .button_next {
-        left: auto;
-        right: 0;
+        top: 40%;
+        width: 35px;
+        height: 35px;
     }
     .arts .more a {
         width: 90px;
@@ -1111,6 +1112,8 @@
     line-height: 1.2;
     height: 3.6em;
     overflow: hidden;
+    margin-top: 5px;
+    display: inline-block;
 }
 .gal .notice > ul > li .detail .info_sub {
     position: relative;
@@ -1176,7 +1179,7 @@
     font-weight: 700;
     margin-bottom: 15px;
 }
-.gal .collect .swiper { height:370px } 
+.gal .collect .swiper { height:370.5px } 
 .gal .collect .swiper-slide img { display:block; width:100%; height:100%; object-fit:cover; }
 .gal .collect .button_prev,
 .gal .collect .button_next {
@@ -1222,6 +1225,7 @@
         width: 40%;
         position: relative;
     }
+    .gal .collect .swiper { height:366px } 
 }
 @media screen and (max-width:1024px){
     .gal {
@@ -1285,9 +1289,7 @@
         font-size: 35px;
         margin-bottom: 15px;
     }
-    .gal .collect .swiper {
-        height: 310px;
-    }
+    .gal .collect .swiper { height:318px } 
     .gal .collect .button_prev,
     .gal .collect .button_next {
         width: 36px;
