@@ -1,0 +1,44 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual {
+    position: relative;
+    background-color: #9BBF82;
+    height: 850px;
+}
+.visual .swiper {
+    height: 850px;
+}
+.swiper-slide img { 
+    display:block; width:100%; height:100%; object-fit:cover; 
+}
+.visual .swiper .pagination {
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 20px;
+    z-index: 10;
+    width: auto;
+}
+.visual .swiper .pagination .swiper-pagination-bullet {
+    background: transparent;
+    opacity: 1;
+    border: 1px solid #fff;
+    width: 13px;
+    height: 13px;
+    outline: 0;
+    margin: var(--swiper-pagination-bullet-horizontal-gap,3px);
+}
+.visual .swiper .pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+.visual ul li .tit {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    width: 1280px;
+    z-index: 10;
+    color: #fff;
+    font-size: 17px;
+}
