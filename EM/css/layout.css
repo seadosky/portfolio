@@ -100,8 +100,9 @@ header .tnb ul li.lang a {
 
 .header.fixed {
     background-color: #fff;
-    color: #1d1d1d;
+    color: #2d2d2d;
     border-bottom: 1px solid #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 .header.fixed .logo a {
     background: url(../images/common/logo_b.svg) no-repeat center center / contain;
@@ -149,3 +150,184 @@ header .tnb ul li.lang a {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z' fill='%232D2D2D'/%3E%3C/svg%3E%0A");
 }
 
+@media screen and (max-width:1320px){
+    .header .logo a {
+        width: 148px;
+        height: 24px;
+    }
+    .header .gnb ul.depth1 > li {
+        width: 137px;
+    }
+    .header .gnb ul.depth1 > li > a {
+        font-size: 20px;
+    }
+    .header .tnb ul li {
+        margin: 0 5px;
+    }
+    .header .tnb ul li a {
+        width: 22px;
+        height: 22px;
+    }
+}
+@media screen and (max-width:1024px){
+    .header {
+        height: 80px;
+    }
+    .header .logo {
+        margin: 30px 0 0 0;
+    }
+    .header .logo a {
+        width: 148px;
+        height: 24px;
+    }
+    .header .gnb .gnb_open,
+    .header .gnb .gnb_close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60px;
+        height: 80px;
+        font-size: 0;
+        line-height: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 26px auto;
+    }
+    .header .gnb .gnb_open {
+        display: block;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.88889 18C3.63704 18 3.42593 17.9042 3.25556 17.7125C3.08519 17.5208 3 17.2833 3 17C3 16.7167 3.08519 16.4792 3.25556 16.2875C3.42593 16.0958 3.63704 16 3.88889 16H18.1111C18.363 16 18.5741 16.0958 18.7444 16.2875C18.9148 16.4792 19 16.7167 19 17C19 17.2833 18.9148 17.5208 18.7444 17.7125C18.5741 17.9042 18.363 18 18.1111 18H3.88889ZM3.88889 13C3.63704 13 3.42593 12.9042 3.25556 12.7125C3.08519 12.5208 3 12.2833 3 12C3 11.7167 3.08519 11.4792 3.25556 11.2875C3.42593 11.0958 3.63704 11 3.88889 11H18.1111C18.363 11 18.5741 11.0958 18.7444 11.2875C18.9148 11.4792 19 11.7167 19 12C19 12.2833 18.9148 12.5208 18.7444 12.7125C18.5741 12.9042 18.363 13 18.1111 13H3.88889ZM3.88889 8C3.63704 8 3.42593 7.90417 3.25556 7.7125C3.08519 7.52083 3 7.28333 3 7C3 6.71667 3.08519 6.47917 3.25556 6.2875C3.42593 6.09583 3.63704 6 3.88889 6H18.1111C18.363 6 18.5741 6.09583 18.7444 6.2875C18.9148 6.47917 19 6.71667 19 7C19 7.28333 18.9148 7.52083 18.7444 7.7125C18.5741 7.90417 18.363 8 18.1111 8H3.88889Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    .header.fixed .gnb .gnb_open {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.88889 18C3.63704 18 3.42593 17.9042 3.25556 17.7125C3.08519 17.5208 3 17.2833 3 17C3 16.7167 3.08519 16.4792 3.25556 16.2875C3.42593 16.0958 3.63704 16 3.88889 16H18.1111C18.363 16 18.5741 16.0958 18.7444 16.2875C18.9148 16.4792 19 16.7167 19 17C19 17.2833 18.9148 17.5208 18.7444 17.7125C18.5741 17.9042 18.363 18 18.1111 18H3.88889ZM3.88889 13C3.63704 13 3.42593 12.9042 3.25556 12.7125C3.08519 12.5208 3 12.2833 3 12C3 11.7167 3.08519 11.4792 3.25556 11.2875C3.42593 11.0958 3.63704 11 3.88889 11H18.1111C18.363 11 18.5741 11.0958 18.7444 11.2875C18.9148 11.4792 19 11.7167 19 12C19 12.2833 18.9148 12.5208 18.7444 12.7125C18.5741 12.9042 18.363 13 18.1111 13H3.88889ZM3.88889 8C3.63704 8 3.42593 7.90417 3.25556 7.7125C3.08519 7.52083 3 7.28333 3 7C3 6.71667 3.08519 6.47917 3.25556 6.2875C3.42593 6.09583 3.63704 6 3.88889 6H18.1111C18.363 6 18.5741 6.09583 18.7444 6.2875C18.9148 6.47917 19 6.71667 19 7C19 7.28333 18.9148 7.52083 18.7444 7.7125C18.5741 7.90417 18.363 8 18.1111 8H3.88889Z' fill='%232D2D2D'/%3E%3C/svg%3E%0A");
+    }
+    .header .gnb .gnb_close {
+        background-size: 30px auto;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 13.4905L6.78327 18.7072C6.58809 18.9024 6.33967 19 6.03802 19C5.73638 19 5.48796 18.9024 5.29278 18.7072C5.09759 18.512 5 18.2636 5 17.962C5 17.6603 5.09759 17.4119 5.29278 17.2167L10.5095 12L5.29278 6.78327C5.09759 6.58809 5 6.33967 5 6.03802C5 5.73638 5.09759 5.48796 5.29278 5.29278C5.48796 5.09759 5.73638 5 6.03802 5C6.33967 5 6.58809 5.09759 6.78327 5.29278L12 10.5095L17.2167 5.29278C17.4119 5.09759 17.6603 5 17.962 5C18.2636 5 18.512 5.09759 18.7072 5.29278C18.9024 5.48796 19 5.73638 19 6.03802C19 6.33967 18.9024 6.58809 18.7072 6.78327L13.4905 12L18.7072 17.2167C18.9024 17.4119 19 17.6603 19 17.962C19 18.2636 18.9024 18.512 18.7072 18.7072C18.512 18.9024 18.2636 19 17.962 19C17.6603 19 17.4119 18.9024 17.2167 18.7072L12 13.4905Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    .header .gnb ul.depth1 {
+        display: none;
+    }
+    .header .tnb {
+        display: none;
+    }
+    .header.menu_open .logo a {
+        display: none;
+    }
+    .header.menu_open .gnb .gnb_wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        background-color: #9BBF82;
+        color: #fff;
+        padding: 80px 20px 20px 20px;
+    }
+    .header.menu_open .gnb .gnb_open {
+        display: none;
+    }
+    .header.menu_open .gnb .gnb_close {
+        display: block;
+    }
+    .header.menu_open .gnb ul.depth1{
+        display: block;
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        margin-top: 10px;
+    }
+    .header.menu_open .gnb ul.depth1::before {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        z-index: 10;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.6);
+        content: ""; 
+    }
+    .header.menu_open .gnb ul.depth1 > li {
+        margin-left: 0;
+        text-align: left;
+    }
+    .header.menu_open .gnb ul.depth1 > li > a {
+        line-height: 80px;
+    }
+    .header .gnb ul.depth1 > li > a > span {
+        line-height: 80px;
+    }
+}
+@media screen and (max-width:768px){
+    .header {
+        height: 70px;
+    }
+    .header .logo {
+        margin: 25px 0 0 0;
+    }
+    .header .logo a {
+        width: 125px;
+        height: 20px;
+    }
+    .header .gnb .gnb_open,
+    .header .gnb .gnb_close {
+        width: 60px;
+        height: 70px;
+        background-size: 25px auto;
+    }
+    .header .gnb .gnb_close {
+        background-size: 28px auto;
+    }
+    .header.menu_open .gnb ul.depth1{
+        height: calc(100vh - 70px);
+        margin-top: 10px;
+    }
+    .header.menu_open .gnb ul.depth1::before {
+        top: 70px;
+    }
+    .header.menu_open .gnb ul.depth1 > li > a {
+        line-height: 70px;
+    }
+    .header .gnb ul.depth1 > li > a > span {
+        line-height: 70px;
+    }
+}
+@media screen and (max-width:500px){
+    .header {
+        height: 50px;
+    }
+    .header .logo {
+        margin: 16px 0 0 0;
+    }
+    .header .logo a {
+        width: 112px;
+        height: 18px;
+    }
+    .header .gnb .gnb_open,
+    .header .gnb .gnb_close {
+        width: 60px;
+        height: 50px;
+        background-size: 24px auto;
+    }
+    .header .gnb .gnb_close {
+        background-size: 25px auto;
+    }
+    .header.menu_open .gnb ul.depth1{
+        height: calc(100vh - 50px);
+        margin-top: 0;
+    }
+    .header.menu_open .gnb ul.depth1::before {
+        top: 50px;
+    }
+    .header.menu_open .gnb ul.depth1 > li > a {
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .header .gnb ul.depth1 > li > a > span {
+        line-height: 50px;
+    }
+}
+
+.footer {
+    background-color: #fff;
+    height: 1000px;
+}
