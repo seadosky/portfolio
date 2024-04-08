@@ -32,10 +32,10 @@ $(document).ready(function(){
                 },
             },
             loop: true,  
-            /* autoplay: {  
+            autoplay: {  
                 delay: 2500,
                 disableOnInteraction: true, 
-            }, */
+            },
             
         });
     }
@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     function resize_chk(){
         window_w = $(window).width()
-        if(window_w < 768){
+        if(window_w <= 768){
             biz_swiper.destroy();
             biz_swiper = undefined
         }else{
@@ -58,5 +58,20 @@ $(document).ready(function(){
         resize_chk()
     })
 
+    const news_swiper = new Swiper('.news .swiper', {
+        slidesPerView: "auto",
+        spaceBetween: 12, 
+        breakpoints: {
+            768: {  
+                spaceBetween: 16, 
+            },
+            1024: {  
+                spaceBetween: 22,
+            },
+            1320: {  
+                spaceBetween: 28,
+            },
+        },
+    });
 
 })//document.ready
