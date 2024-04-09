@@ -65,6 +65,48 @@ $(document).ready(function(){
          $('.header').removeClass('menu_open')
          $("html, body").css({overflow : "visible", height : "auto"}).unbind('scroll touchmove mousewheel');
      })
+
+     const footer_swiper = new Swiper('.footer .swiper', { 
+        slidesPerView: 1, 
+        spaceBetween: 16, 
+        breakpoints: {
+            450: {    
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            590: {    
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {    
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1024: {  
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+            1320: {   
+                slidesPerView: 6,
+                spaceBetween: 40,
+            },
+        },
+        loop: true,  
+        autoplay: {  
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+        navigation: {
+            nextEl: '.footer .button_prev',
+            prevEl: '.footer .button_next',
+        },
+	});
+
+    $('footer .top').on('click', function(){
+        $('html, body').animate({
+            scrollTop : 0
+        }, 500)
+    })
  
 
 })//ready

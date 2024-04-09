@@ -720,6 +720,21 @@
     background-position: center center;
     background-size: 90px auto;
 }
+.em .list ul li a strong::after {
+    position: absolute;
+    right: 28px;
+    bottom: 0;
+    width: 27px;
+    height: 27px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.175 13.5004L9.78752 9.11289C9.58127 8.90664 9.47815 8.64414 9.47815 8.32539C9.47815 8.00664 9.58127 7.74414 9.78752 7.53789C9.99377 7.33164 10.2563 7.22852 10.575 7.22852C10.8938 7.22852 11.1563 7.33164 11.3625 7.53789L16.5375 12.7129C16.65 12.8254 16.7297 12.9473 16.7766 13.0785C16.8235 13.2098 16.8469 13.3504 16.8469 13.5004C16.8469 13.6504 16.8235 13.791 16.7766 13.9223C16.7297 14.0535 16.65 14.1754 16.5375 14.2879L11.3625 19.4629C11.1563 19.6691 10.8938 19.7723 10.575 19.7723C10.2563 19.7723 9.99377 19.6691 9.78752 19.4629C9.58127 19.2566 9.47815 18.9941 9.47815 18.6754C9.47815 18.3566 9.58127 18.0941 9.78752 17.8879L14.175 13.5004Z' fill='%23233A0C'/%3E%3C/svg%3E%0A");
+}
+.em .list ul li a:hover strong::after {
+    display: none;
+}
 .em .list ul li a strong br {
     display: none;
 }
@@ -841,6 +856,13 @@
         height: 80px;
         background-size: 70px auto;
     }
+    .em .list ul li a strong::after {
+        position: absolute;
+        right: 20px;
+        bottom: -1px;
+        width: 25px;
+        height: 25px;
+    }
     .em .list ul li a .memo {
         line-height: 1.2;
         height: 3.6em;
@@ -856,6 +878,11 @@
     .em .list ul li a:hover {
         padding: 20px 10% 0 8%;
         transform: translate(0, -12px);
+    }
+}
+@media screen and (max-width:1120px){
+    .em .list ul li a strong::after {
+        display: none;
     }
 }
 @media screen and (max-width:1024px){
@@ -1149,7 +1176,7 @@
     .news .tit a {
         margin-top: 20px;
     }
-    .news .list {
+      .news .list {
         margin-left: 20px;
     }
     .news .list ul li {
@@ -1199,6 +1226,12 @@
         padding: 8px 34px 0 20px;
         border-radius: 15px;
     }
+    .news .tit a::after {
+        right: 14px;
+        top: 7px;
+        width: 18px;
+        height: 18px;
+    }
     .news .list {
         margin-left: 40px;
     }
@@ -1232,6 +1265,7 @@
     .news .inner {
         margin-top: 60px;
         display: block;
+        position: relative;
     }
     .news .tit {
         margin: 14px 0 0 33px;
@@ -1262,9 +1296,14 @@
         height: 33px;
         padding: 7px 30px 0 20px;
     }
+    .news .tit a::after {
+        right: 14px;
+        top: 7px;
+        width: 16px;
+        height: 16px;
+    }
     .news .list {
         margin: 20px 0 0 10px;
-        position: relative;
     }
     .news .list ul li {
         width: 260px;
