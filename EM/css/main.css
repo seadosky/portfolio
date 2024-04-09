@@ -462,11 +462,9 @@
         width: 380px;
     }
     .biz .swiper-slide a strong {
-        bottom: 24px;
-        font-size: 20px;
-    }
-    .biz .swiper-slide a span::after {
         height: 40px;
+        line-height: 40px; 
+        font-size: 20px;
     }
 }
 @media screen and (max-width:1024px){
@@ -509,11 +507,9 @@
         width: 350px;
     }
     .biz .swiper-slide a strong {
-        bottom: 22px;
-        font-size: 18px;
-    }
-    .biz .swiper-slide a span::after {
         height: 36px;
+        line-height: 36px; 
+        font-size: 18px;
     }
 }
 @media screen and (max-width:768px){
@@ -573,19 +569,20 @@
         border-radius: 10px;
     }
     .biz .swiper-slide a strong {
-        left: 15px;
-        bottom: 18px;
-        font-size: 16px;
-    }
-    .biz .swiper-slide a span::after {
         height: 30px;
+        line-height: 30px; 
+        font-size: 16px;
         border-radius: 0 0 10px 10px;
     }
-    .biz .swiper-slide a.emlife span::after,
-    .biz .swiper-slide a.bio span::after {
+    .biz .swiper-slide a.bio,
+    .biz .swiper-slide a.social {
+        margin-top: 10px;
+    }
+    .biz .swiper-slide a.emlife strong,
+    .biz .swiper-slide a.bio strong {
         background-color: #468409;
     }
-    .biz .swiper-slide a.social span::after {
+    .biz .swiper-slide a.social strong {
         background-color: #6BA81F;
     }
 }
@@ -632,12 +629,9 @@
         border-radius: 8px;
     }
     .biz .swiper-slide a strong {
-        left: 12px;
-        bottom: 18px;
-        font-size: 14px;
-    }
-    .biz .swiper-slide a span::after {
         height: 28px;
+        line-height: 28px; 
+        font-size: 14px;
         border-radius: 0 0 8px 8px;
     }
 }
