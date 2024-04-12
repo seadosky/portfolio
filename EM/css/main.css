@@ -610,7 +610,7 @@
         bottom: -70px;
         width: 84px;
         height: 31px;
-        padding: 7px 30px 0 18px;
+        padding: 7px 18px 0 18px;
     }
     .biz .tit a::after {
         right: 13px;
@@ -633,6 +633,10 @@
         line-height: 28px; 
         font-size: 14px;
         border-radius: 0 0 8px 8px;
+    }
+    .biz .swiper-slide a.bio,
+    .biz .swiper-slide a.social {
+        margin-top: 6px;
     }
 }
 
@@ -1353,7 +1357,7 @@
         transform: translate(-50%, -50%);
         width: 84px;
         height: 31px;
-        padding: 7px 30px 0 18px;
+        padding: 7px 18px 0 18px;
     }
     .news .tit a::after {
         right: 13px;
@@ -1385,6 +1389,7 @@
         overflow: hidden;
     }
     .news .list ul li a .more {
+        width: 215px;
         margin-top: 22px;
         transform: translate(-13%, -50%);
     }
