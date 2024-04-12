@@ -466,7 +466,7 @@ header .tnb ul li.lang a {
     background-size: contain;
 } 
 .footer .f_btm .f_cnt .f_info {
-    margin-top: 2px;
+    margin-top: 10px;
 }
 .footer .f_btm .f_cnt .f_info ul {
     display: flex;
