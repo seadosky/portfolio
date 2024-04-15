@@ -1,77 +1,24 @@
 $(document).ready(function(){
+    const myFullpage = new fullpage('#fullpage', { 
 
-    let window_w
-    let biz_swiper = undefined
+		navigation: true,
+		navigationPosition: 'left', 
+		navigationTooltips: ['Main', '공간소개', '이용안내', '갤러리'], 
+		showActiveTooltip: true, 
 
-    const visual_swiper = new Swiper('.visual .swiper', { 
+		autoScrolling:true, 
+		scrollHorizontally: true,
 
-        effect: "fade",
+		verticalCentered: true,
+		
+		scrollOverflow: false, 
 
-        autoplay: { 
-            delay: 5000,
-            disableOnInteraction: true,
-        },
+		afterLoad: function(origin, destination, direction, trigger){
+			if(destination.index == 0){
+				
+			}
+		},
 
-        loop: true, 
-
-        pagination: { 
-        el: '.visual .pagination', 
-        clickable: true,  
-	},
-
-    });
-
-    function initSwiper(){
-        biz_swiper = new Swiper('.biz .swiper', { 
-            slidesPerView: "auto", 
-            spaceBetween: 16, 
-            breakpoints: {
-                1320: {  
-                    slidesPerView: 'auto',
-                    spaceBetween: 20,
-                },
-            },
-            loop: true,  
-            autoplay: {  
-                delay: 2500,
-                disableOnInteraction: true, 
-            },
-            
-        });
-    }
-    initSwiper()
-
-    function resize_chk(){
-        window_w = $(window).width()
-        if(window_w <= 768){
-            biz_swiper.destroy();
-            biz_swiper = undefined
-        }else{
-            if(biz_swiper == undefined){
-                initSwiper()
-            }
-        }
-    }
-
-    resize_chk()
-    $(window).resize(function(){
-        resize_chk()
-    })
-
-    const news_swiper = new Swiper('.news .swiper', {
-        slidesPerView: "auto",
-        spaceBetween: 12, 
-        breakpoints: {
-            768: {  
-                spaceBetween: 16, 
-            },
-            1024: {  
-                spaceBetween: 22,
-            },
-            1320: {  
-                spaceBetween: 28,
-            },
-        },
-    });
-
+		responsiveWidth: 768 /* fullpage를 적용시키지 않을 모바일 사이즈 */
+	});
 })//document.ready
