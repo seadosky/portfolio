@@ -24,7 +24,7 @@
 }
 .visual.active .tit {
 animation-name: visual_tit;
-animation-duration: 0.8s;
+animation-duration: 0.5s;
 animation-iteration-count: 1;
 animation-fill-mode: forwards;
 }
@@ -264,7 +264,7 @@ aside.quick ul li.top a::before {
    100% { transform:translate(0, 0) }
 }
 .biz .list {
-   margin: 436px 0 0 140px;
+   margin: 436px 0 0 170px;
 }
 .biz .list ul {
    display: flex;
@@ -389,6 +389,16 @@ background-image: url(../images/n3.png);
 .notice h2 .ico_text {
    width: 220px;
    z-index: 10;
+   animation-name: notice_text;
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_text { 
+	0% { transform:rotate(-3deg) }
+	50% { transform:rotate(9deg) }
+	100% { transform:rotate(-3deg) } 
 }
 .notice h2 span {
    font-family: 'YeongdeokSnowCrab';
@@ -399,6 +409,16 @@ background-image: url(../images/n3.png);
    width: 101px;
    margin-left: 10px;
    z-index: 10;
+   animation-name: notice_face;
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_face { 
+	0% { transform:rotate(-10deg) }
+	50% { transform:rotate(10deg) }
+	100% { transform:rotate(-10deg) } 
 }
 .notice h2 .t1 {
    transform: rotate(2deg);
@@ -449,6 +469,17 @@ margin: 10px 0 0 6.3%;
    height: 130px;
    line-height: 134px;
 }
+.notice .list ul li.use:hover span {
+   animation-name: notice_use;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_use { 
+	0% { transform:rotate(-2deg) }
+	50% { transform:rotate(2deg) }
+	100% { transform:rotate(-2deg) } 
+}
 .notice .list ul li.use strong {
    margin: 0 0 0 145px;
    background: url(../images/notice_use2.png) no-repeat center center / cover;
@@ -459,7 +490,18 @@ margin: 10px 0 0 6.3%;
    left: 6%;
    top: 95px;
    content: "";
-   transform: rotate(-3deg);  
+   transform: rotate(-3deg);
+}
+.notice .list ul li.use:hover strong {  
+   animation-name: notice_use2;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_use2 { 
+	0% { transform:rotate(-3deg) }
+	50% { transform:rotate(0deg) }
+	100% { transform:rotate(-3deg) } 
 }
 .notice .list ul li.use p {
    margin: 48px 0 0 38%;
@@ -467,308 +509,455 @@ margin: 10px 0 0 6.3%;
    transform: rotate(-3deg);    
 }
 .notice .list ul li.clean {
-margin: 45px 0 0 70px;
+   margin: 45px 0 0 70px;
 }
 .notice .list ul li.clean span {
-font-size: 43px;
-transform: rotate(-3deg);
-background: url(../images/notice_clean1.png) no-repeat center center / cover;
-width: 392px;
-height: 150px;
-line-height: 175px;
+   font-size: 43px;
+   transform: rotate(-3deg);
+   background: url(../images/notice_clean1.png) no-repeat center center / cover;
+   width: 392px;
+   height: 150px;
+   line-height: 175px;
+}
+.notice .list ul li.clean:hover span {
+   animation-name: notice_clean;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_clean { 
+	0% { transform:rotate(-2deg) }
+	50% { transform:rotate(2deg) }
+	100% { transform:rotate(-2deg) } 
 }
 .notice .list ul li.clean strong {
-font-size: 34px;
-background: url(../images/notice_clean2.png) no-repeat center center / cover;
-width: 311px;
-height: 135px;
-line-height: 135px;
-transform: rotate(-5deg);
-position: absolute;
-content: "";
-left: 43%;
-top: 125px;
+   font-size: 34px;
+   background: url(../images/notice_clean2.png) no-repeat center center / cover;
+   width: 311px;
+   height: 135px;
+   line-height: 135px;
+   transform: rotate(-5deg);
+   position: absolute;
+   content: "";
+   left: 43%;
+   top: 125px;
+}
+.notice .list ul li.clean:hover strong {
+   animation-name: notice_clean2;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_clean2 { 
+	0% { transform:rotate(-6deg) }
+	50% { transform:rotate(-2deg) }
+	100% { transform:rotate(-6deg) } 
 }
 .notice .list ul li.clean p {
-width: 288px;
-margin: 44px 0 0 52%;
-transform: rotate(-7deg);
+   width: 288px;
+   margin: 46px 0 0 52%;
+   transform: rotate(-7deg);
 }
 .notice .list ul li.pool {
-margin: 50px 0 0 230px;
-position: relative;
+   margin: 50px 0 0 230px;
+   position: relative;
 }
 .notice .list ul li.pool::after {
-position: absolute;
-left: 70%;
-top: -140px;
-width: 228px;
-height: 179px;
-content: "";
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
-background-image: url(../images/notice_stars.png);
+   position: absolute;
+   left: 70%;
+   top: -150px;
+   width: 228px;
+   height: 179px;
+   content: "";
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   background-image: url(../images/notice_stars.png);
+   animation-name: notice_rocket;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_rocket { 
+	0% { transform:translate(0, 0) }
+   50% { transform:translate(0, 10px) }
+   100% { transform:translate(0, 0) }
 }
 .notice .list ul li.pool span {
-font-size: 34px;
-transform: rotate(5deg);
-background: url(../images/notice_pool1.png) no-repeat center center / cover;
-width: 281px;
-height: 113px;
-line-height: 121px;
+   font-size: 34px;
+   transform: rotate(5deg);
+   background: url(../images/notice_pool1.png) no-repeat center center / cover;
+   width: 281px;
+   height: 113px;
+   line-height: 121px;
+}
+.notice .list ul li.pool:hover span {
+   animation-name: notice_pool;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_pool { 
+	0% { transform:rotate(-2deg) }
+	50% { transform:rotate(2deg) }
+	100% { transform:rotate(-2deg) } 
 }
 .notice .list ul li.pool strong {
-font-size: 25px;
-background: url(../images/notice_pool2.png) no-repeat center center / cover;
-width: 347px;
-height: 65px;
-line-height: 65px;
-transform: rotate(-5deg);
-position: absolute;
-content: "";
-left: 27%;
-top: 90px;
+   font-size: 25px;
+   background: url(../images/notice_pool2.png) no-repeat center center / cover;
+   width: 347px;
+   height: 65px;
+   line-height: 65px;
+   transform: rotate(-5deg);
+   position: absolute;
+   content: "";
+   left: 27%;
+   top: 90px;
+}
+.notice .list ul li.pool:hover strong {
+   animation-name: notice_pool2;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_pool2 { 
+	0% { transform:rotate(-6deg) }
+	50% { transform:rotate(-2deg) }
+	100% { transform:rotate(-6deg) } 
 }
 .notice .list ul li.pool p {
-width: 326px;
-margin: 48px 0 0 31%;
-transform: rotate(-4deg);
+   width: 326px;
+   margin: 48px 0 0 31%;
+   transform: rotate(-4deg);
 }
 .notice .list ul li.time {
-margin: 65px 0 0 16%;
-position: relative;
+   margin: 65px 0 0 16%;
+   position: relative;
 }
 .notice .list ul li.time::after {
-position: absolute;
-left: -160px;
-top: 80px;
-width: 193px;
-height: 186px;
-content: "";
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
-background-image: url(../images/notice_moon.png);
+   position: absolute;
+   left: -160px;
+   top: 80px;
+   width: 193px;
+   height: 186px;
+   content: "";
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   background-image: url(../images/notice_moon.png);
+   animation-name: notice_moon;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_moon { 
+	0% { transform:translate(0, 0) }
+   50% { transform:translate(0, 10px) }
+   100% { transform:translate(0, 0) }
 }
 .notice .list ul li.time span {
-font-size: 33px;
-transform: rotate(-5deg);
-background: url(../images/notice_time1.png)  no-repeat center center / cover; 
-width: 260px;
-height: 137px;
-line-height: 161px;
+   font-size: 33px;
+   transform: rotate(-5deg);
+   background: url(../images/notice_time1.png)  no-repeat center center / cover; 
+   width: 260px;
+   height: 137px;
+   line-height: 161px;
+}
+.notice .list ul li.time:hover span {
+   animation-name: notice_time;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_time { 
+	0% { transform:rotate(-2deg) }
+	50% { transform:rotate(2deg) }
+	100% { transform:rotate(-2deg) } 
 }
 .notice .list ul li.time strong {
-font-size: 25px;
-background: url(../images/notice_time2.png) no-repeat center center / cover;
-width: 225px;
-height: 113px;
-line-height: 113px;
-transform: rotate(-12deg);
-position: absolute;
-content: "";
-left: 26%;
-top: calc(50% - 32px);
+   font-size: 25px;
+   background: url(../images/notice_time2.png) no-repeat center center / cover;
+   width: 225px;
+   height: 113px;
+   line-height: 113px;
+   transform: rotate(-12deg);
+   position: absolute;
+   content: "";
+   left: 26%;
+   top: calc(50% - 32px);
+}
+.notice .list ul li.time:hover strong {
+   animation-name: notice_time2;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_time2 { 
+	0% { transform:rotate(-12deg) }
+	50% { transform:rotate(-8deg) }
+	100% { transform:rotate(-12deg) } 
 }
 .notice .list ul li.time p {
-width: 222px;
-margin: 35px 0 0 33%;
-transform: rotate(-13deg);
+   width: 222px;
+   margin: 35px 0 0 33%;
+   transform: rotate(-13deg);
 }
 .notice .list ul li.safe {
-margin: 235px 0 0 110px;
-position: relative;
+   margin: 235px 0 0 110px;
+   position: relative;
 }
 .notice .list ul li.safe::after {
-position: absolute;
-width: 136px;
-height: 205px;
-left: 85px;
-bottom: 35px;
-content: "";
-background-repeat: no-repeat;
+   position: absolute;
+   width: 136px;
+   height: 205px;
+   left: 85px;
+   bottom: 45px;
+   content: "";
+   background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
    background-image: url(../images/notice_safe3.png);
-}
+}  
 .notice .list ul li.safe span {
-font-size: 18px;
-color: #003E53;
-width: 175px;
-position: relative;
-z-index: 10;
-font-family: inherit;
+   font-size: 18px;
+   color: #003E53;
+   width: 175px;
+   position: relative;
+   z-index: 10;
+   font-family: inherit;
+   animation-name: notice_safe;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_safe { 
+	0% { transform:rotate(-2deg) }
+	50% { transform:rotate(2deg) }
+	100% { transform:rotate(-2deg) } 
 }
 .notice .list ul li.safe span::before {
-position: absolute;
-width: 356px;
-height: 308px;
-left: -90px;
-bottom: -125px;
-content: "";
-z-index: -1;
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
-background-image: url(../images/notice_safe.png);
+   position: absolute;
+   width: 356px;
+   height: 308px;
+   left: -90px;
+   bottom: -125px;
+   content: "";
+   z-index: -1;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   background-image: url(../images/notice_safe.png);
 }
 .notice .list ul li.safe span::after {
-position: absolute;
-width: 40px;
-height: 44px;
-left: -20px;
-top: -50px;
-content: "";
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
-background-image: url(../images/notice_safe2.png);
+   position: absolute;
+   width: 40px;
+   height: 44px;
+   left: -20px;
+   top: -50px;
+   content: "";
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   background-image: url(../images/notice_safe2.png);
 }
 .notice .list ul li.waste {
-margin: 95px 0 0 0;
+   margin: 95px 0 0 0;
 }
 .notice .list ul li.waste span {
-font-size: 38px;
-width: 274px;
-height: 106px;
-line-height: 113px;
-background: url(../images/notice_waste1.png) no-repeat center center / cover;
-transform: rotate(-7deg);
+   font-size: 38px;
+   width: 274px;
+   height: 106px;
+   line-height: 113px;
+   background: url(../images/notice_waste1.png) no-repeat center center / cover;
+   transform: rotate(-7deg);
+}
+.notice .list ul li.waste:hover span {
+   animation-name: notice_waste;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_waste { 
+	0% { transform:rotate(-2deg) }
+	50% { transform:rotate(2deg) }
+	100% { transform:rotate(-2deg) } 
 }
 .notice .list ul li.waste strong {
-background: url(../images/notice_waste2.png) no-repeat center center / cover;
-width: 286px;
-height: 120px;
-line-height: 120px;
-transform: rotate(-3deg);
-position: absolute;
-content: "";
-left: 72%;
-top: calc(50% + 141px);
+   background: url(../images/notice_waste2.png) no-repeat center center / cover;
+   width: 286px;
+   height: 120px;
+   line-height: 120px;
+   transform: rotate(-3deg);
+   position: absolute;
+   content: "";
+   left: 72%;
+   top: calc(50% + 144px);
+}
+.notice .list ul li.waste:hover strong {
+   animation-name: notice_waste2;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes notice_waste2 { 
+	0% { transform:rotate(-4deg) }
+	50% { transform:rotate(0deg) }
+	100% { transform:rotate(-4deg) } 
 }
 .notice .list ul li.waste p {
-width: 265px;
-transform: rotate(-6deg);
-margin: 50px 0 0 25%;
+   width: 265px;
+   transform: rotate(-6deg);
+   margin: 52px 0 0 25%;
 }
 
 
 .gallery {
    background: url(../images/gal_bg.png) no-repeat center center / cover;
+   overflow: hidden;
 }
 .gallery .tit {
-margin: 100px 0 0 0;
+   margin: 100px 0 0 0;
 }
 .gallery .tit h2 {
-display: flex;
-justify-content: center;
-align-items: flex-end;
-font-size: 60px;
-font-family: 'YeongdeokSnowCrab';
-
-text-shadow: 5px 5px 4px rgba(255, 183, 0, 0.8);
-position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   font-size: 60px;
+   font-family: 'YeongdeokSnowCrab';
+   text-shadow: 5px 5px 4px rgba(255, 183, 0, 0.8);
+   position: relative;
 }
 .gallery .tit h2::after {
-position: absolute;
-left: 50.3%;
-bottom: -19px;
-transform: translate(-50%, -50%);
-width: 395px;
-height: 8px;
-content: "";
-background-color: #FFB700;
+   position: absolute;
+   left: 50.3%;
+   bottom: -19px;
+   transform: translate(-50%, -50%);
+   width: 395px;
+   height: 8px;
+   content: "";
+   background-color: #FFB700;
 }
 .gallery .tit h2 span {
-margin: 0 0 0 10px;
-line-height: 66px;
+   margin: 0 0 0 10px;
+   line-height: 66px;
 }
 .gallery .tit .sun {
-position: absolute;
-left: calc(50% - 500px);
-top: 25px;
-width: 196px;
-height: 124px;
-content: "";
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
+   position: absolute;
+   left: calc(50% - 500px);
+   top: 25px;
+   width: 196px;
+   height: 124px;
+   content: "";
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   animation-name: gall_sun;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes gall_sun { 
+	0% { transform:translate(0, 0) }
+   50% { transform:translate(0, 10px) }
+   100% { transform:translate(0, 0) }
 }
 .gallery .tit .rocket {
-position: absolute;
-left: calc(50% + 500px);
-top: 70px;
-width: 214px;
-height: 145px;
-content: "";
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
+   position: absolute;
+   left: calc(50% - 350px);
+   top: -150px;
+   width: 187px;
+   height: 166px;
+   background-color: transparent;
+   offset: path('M717.5 235.5C717.5 300.309 677.455 359.046 612.577 401.606C547.703 444.162 458.052 470.5 359 470.5C259.948 470.5 170.297 444.162 105.423 401.606C40.545 359.046 0.5 300.309 0.5 235.5C0.5 170.691 40.545 111.954 105.423 69.3944C170.297 26.838 259.948 0.5 359 0.5C458.052 0.5 547.703 26.838 612.577 69.3944C677.455 111.954 717.5 170.691 717.5 235.5Z') auto;
+   animation-name: gal_rocket;
+   animation-duration: 5s;
+   animation-delay: 0.3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear; 
+}
+@keyframes gal_rocket {
+   0% { offset-distance: 0% }
+   100% { offset-distance: 100% }
+}
+.gallery .tit .rockstar {
+   position: absolute;
+   left: calc(50% + 250px);
+   top: 100px;
+   width: 214px;
+   height: 103px;
 }
 .gallery .list {
-position: relative;
-width: 100%;
-margin: 60px 0 170px 0;
+   position: relative;
+   width: 100%;
+   margin: 60px 0 170px 0;
 }
 .gallery .swiper {
-width: 100%;
+   width: 100%;
 }
 .gallery .swiper ul li {
-width: 400px;
+   width: 400px;
 }
 .gallery .swiper ul li a .facebook,
 .gallery .swiper ul li a .insta,
 .gallery .swiper ul li a .youtube {
-position: absolute;
-left: 10px;
-bottom: 58px;
-width: 28px;
-height: 28px;
-content: "";
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
-border-radius: 50%;
+   position: absolute;
+   left: 10px;
+   bottom: 58px;
+   width: 28px;
+   height: 28px;
+   content: "";
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 50%;
 }
 .gallery .swiper ul li a .facebook {
-box-shadow: 2px 2px 4px rgba(23, 120, 242, 0.2);
+   box-shadow: 2px 2px 4px rgba(23, 120, 242, 0.2);
 }
 .gallery .swiper ul li a .insta {
-box-shadow: 2px 2px 4px rgba(255, 110, 153, 0.2);
+   box-shadow: 2px 2px 4px rgba(255, 110, 153, 0.2);
 }
 .gallery .swiper ul li a .youtube {
-box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.2);
+   box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.2);
 }
 .gallery .swiper ul li a {
-display: block;
+   display: block;
 }
 .gallery .swiper ul li a img {
-display:block; 
-width:100%; 
-height:100%; 
-object-fit:cover;
-border-radius: 20px;
-box-shadow: 4px 4px 2px rgba(146, 133, 22, 0.7);
+   display:block; 
+   width:100%; 
+   height:100%; 
+   object-fit:cover;
+   border-radius: 20px;
+   box-shadow: 4px 4px 2px rgba(146, 133, 22, 0.7);
 }
 .gallery .swiper ul li a span {
-display: block;
-text-align: center;
-margin: 12px 0 0 0;
+   display: block;
+   text-align: center;
+   margin: 12px 0 0 0;
 }
 .gallery .stars {
-position: absolute;
-left: calc(50% - 875px);
-top: 61%;
-width: 178px;
-height: 174px;
-z-index: 10;
-content: "";
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
+   position: absolute;
+   left: calc(50% - 875px);
+   top: 61%;
+   width: 178px;
+   height: 174px;
+   z-index: 10;
+   content: "";
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   animation-name: gall_stars;
+   animation-duration: 2s;
+   animation-delay: 0.7s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
-
+@keyframes gall_stars { 
+	0% { transform:translate(0, 0) }
+   50% { transform:translate(0, 10px) }
+   100% { transform:translate(0, 0) }
+}
 
 body #fp-nav.fp-left {
    left: 34px;
