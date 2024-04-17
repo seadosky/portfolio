@@ -97,4 +97,4 @@ const gal_swiper = new Swiper('.gal .collect .swiper', {
 
 });
 
-})//document.ready
+})
