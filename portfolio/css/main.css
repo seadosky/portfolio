@@ -114,6 +114,11 @@ h2 {
     display: block;
     margin: 0 0 0 27px;
 }
+.gcj .cnt .text ul li span.name {
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
 .gcj .cnt .text .website {
     margin: 30px 0 0 0;
     width: 408px;
@@ -203,6 +208,11 @@ h2 {
     display: block;
     margin: 0 0 0 27px;
 }
+.emcenter .cnt .text ul li span.name {
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
 .emcenter .cnt .text .website {
     margin: 30px 0 0 0;
     width: 408px;
@@ -281,6 +291,11 @@ h2 {
     width: 299px;
     display: block;
     margin: 0 0 0 27px;
+}
+.monxstar .cnt .text ul li span.name {
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 5px;
 }
 .monxstar .cnt .text .website {
     margin: 30px 0 0 0;
