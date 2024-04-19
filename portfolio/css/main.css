@@ -1,7 +1,75 @@
 @import url(default.css);
 @import url(common.css);
 @import url(layout.css);
+header {
+    position: fixed;
+    right: 0;
+    top: 30px;
+    z-index: 100;
+    margin-right: 5%;
+    display: none;
+}
+header .link {
+    display: flex;
+}
+header .link span {
+    display: block;
+    width: 105px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    margin: 0 0 0 10px;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
 
+header .link span.on,
+header .link span:hover {
+    border: 2px solid #fff;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+header .link .gcj {
+    border-color: #0D2543;
+}
+header .link .gcj::after {
+    position: absolute;
+    width: 36px;
+    height: 26px;
+    left: 33px;
+    top: 10px;
+    content: "";
+    background: url(../images/logo_gcj.png) no-repeat center center;
+    background-size: contain;
+}
+header .link .em {
+    background-color: #578D42;
+}
+header .link .em::after {
+    position: absolute;
+    width: 47px;
+    height: 30px;
+    left: 24px;
+    top: 3px;
+    content: "";
+    background: url(../images/logo_em.png) no-repeat center center;
+    background-size: contain;
+}
+header .link .monx {
+    background-color: #95EFED;
+    border-color: #95EFED;
+}
+header .link .monx::after {
+    position: absolute;
+    width: 68px;
+    height: 26px;
+    left: 18px;
+    top: 10px;
+    content: "";
+    background: url(../images/logo_monx.png) no-repeat center center;
+    background-size: contain;
+}
 .swiper {
     height: 100vh;
 }
@@ -9,6 +77,13 @@
     height: 100vh;
 }
 section {
+    height: 100vh;
+}
+section .cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     height: 100vh;
 }
 
@@ -23,74 +98,6 @@ section {
 .gcj {
     background: url(../images/gcj_bg.png) no-repeat center center / cover;
     color: #fff;
-}
-.gcj .link {
-    float: right;
-    margin: 30px 0 0 0;
-    display: flex;
-}
-.gcj .link span {
-    display: block;
-    width: 105px;
-    height: 50px;
-    border-radius: 30px;
-    border: 2px solid #fff;
-    margin: 0 0 0 10px;
-    font-size: 0;
-    line-height: 0;
-    position: relative;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-}
-.gcj .link span:hover {
-    border: 2px solid #fff;
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
-}
-.gcj .link .gcj {
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
-}
-.gcj .link .gcj::after {
-    position: absolute;
-    width: 36px;
-    height: 26px;
-    left: 33px;
-    top: 10px;
-    content: "";
-    background: url(../images/logo_gcj.png) no-repeat center center;
-    background-size: contain;
-}
-.gcj .link .em {
-    background-color: #578D42;
-    border-color: #578D42;
-}
-.gcj .link .em::after {
-    position: absolute;
-    width: 47px;
-    height: 30px;
-    left: 24px;
-    top: 3px;
-    content: "";
-    background: url(../images/logo_em.png) no-repeat center center;
-    background-size: contain;
-}
-.gcj .link .monx {
-    background-color: #95EFED;
-    border-color: #95EFED;
-}
-.gcj .link .monx::after {
-    position: absolute;
-    width: 68px;
-    height: 26px;
-    left: 18px;
-    top: 10px;
-    content: "";
-    background: url(../images/logo_monx.png) no-repeat center center;
-    background-size: contain;
-}
-.gcj .cnt {
-    display: flex;
-    justify-content: space-between;
-    padding: 340px 0 0 0;
-    position: relative;
 }
 .gcj .cnt .text ul li {
     display: flex;
@@ -124,7 +131,6 @@ section {
     position: absolute;
     right: -47px;
     top: 0;
-    width: 48px;
     height: 35px;
     content: "";
     background-repeat: no-repeat;
@@ -166,82 +172,174 @@ section {
     0% { transform:translate(-70%, 0) }
     100% { transform:translate(0, 0) }
 }
-.gcj .cnt .mockup img {
-    position: absolute;
-    width: 1016px;
-    height: 664px;
-    left: 471px;
-    top: 173px;
+.gcj .cnt .mockup {
+    margin-right: -207px;
 }
+
+
 
 .emcenter {
     background: url(../images/em_bg.png) no-repeat center center / cover;
     color: #fff;
 }
-.emcenter .link {
-    float: right;
-    margin: 30px 0 0 0;
+
+.emcenter .cnt .mockup {
+    margin-left: -288px;
+}
+
+.emcenter .cnt .text ul li {
     display: flex;
+    margin: 0 0 20px 0;
 }
-.emcenter .link span {
+.emcenter .cnt .text ul li strong {
     display: block;
-    width: 105px;
-    height: 50px;
-    border-radius: 30px;
-    border: 2px solid #fff;
-    margin: 0 0 0 10px;
-    font-size: 0;
-    line-height: 0;
+    width: 82px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.emcenter .cnt .text ul li span {
+    width: 299px;
+    display: block;
+    margin: 0 0 0 27px;
+}
+.emcenter .cnt .text .website {
+    margin: 30px 0 0 0;
+    width: 408px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
     position: relative;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
-.emcenter .link span:hover {
-    border: 2px solid #fff;
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
+.emcenter .cnt .text .website:hover {
+    background-color: #080413;
+    color: #fff;
 }
-.emcenter .link .gcj {
-    border-color: #0D2543;
-}
-.emcenter .link .gcj::after {
+.emcenter .cnt .text .website::after {
     position: absolute;
-    width: 36px;
-    height: 26px;
-    left: 33px;
-    top: 10px;
+    left: -47px;
+    top: 0;
+    width: 48px;
+    height: 35px;
     content: "";
-    background: url(../images/logo_gcj.png) no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='35' viewBox='0 0 48 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.3251 31.0737L37.876 29.5228L25.8531 17.5L37.876 5.47717L36.3251 3.92627L22.7513 17.5L36.3251 31.0737Z' fill='white' fill-opacity='0.6'/%3E%3Cpath d='M23.3251 31.0737L24.876 29.5228L12.8531 17.5L24.876 5.47717L23.3251 3.92627L9.75134 17.5L23.3251 31.0737Z' fill='white' fill-opacity='0.6'/%3E%3C/svg%3E%0A");
 }
-.emcenter .link .em {
-    background-color: #578D42;
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
+.emcenter .cnt .text .website:hover::after {
+    animation-name: web_arrow2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-.emcenter .link .em::after {
-    position: absolute;
-    width: 47px;
-    height: 30px;
-    left: 24px;
-    top: 3px;
-    content: "";
-    background: url(../images/logo_em.png) no-repeat center center;
-    background-size: contain;
+@keyframes web_arrow2 {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(10px, 0) }
+    100% { transform:translate(0, 0) }
 }
-.emcenter .link .monx {
-    background-color: #95EFED;
-    border-color: #95EFED;
+.emcenter .cnt .text .website a {
+    display: block;
+    overflow: hidden;
 }
-.emcenter .link .monx::after {
-    position: absolute;
-    width: 68px;
-    height: 26px;
-    left: 18px;
-    top: 10px;
-    content: "";
-    background: url(../images/logo_monx.png) no-repeat center center;
-    background-size: contain;
+.emcenter .cnt .text .website a strong {
+    display: block;
+    white-space: nowrap;
+    animation-name: web_move2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
+.emcenter .cnt .text .website a strong span {
+    display: inline-block;
+    margin: 0 0 0 16px;
+}
+
+@keyframes web_move2 {
+    0% { transform:translate(0, 0) }
+    100% { transform:translate(-59.5%, 0) }
+}
+
 
 .monxstar {
     background: url(../images/mon_bg.png) no-repeat center center / cover;
+    color: #003E53;
+}
+.monxstar .cnt .text ul li {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+.monxstar .cnt .text ul li strong {
+    display: block;
+    width: 82px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.monxstar .cnt .text ul li span {
+    width: 299px;
+    display: block;
+    margin: 0 0 0 27px;
+}
+.monxstar .cnt .text .website {
+    margin: 30px 0 0 0;
+    width: 408px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid rgba(0, 62, 83, 0.8);
+    border-radius: 20px;
+    position: relative;
+}
+.monxstar .cnt .text .website:hover {
+    background-color: #080413;
     color: #fff;
 }
+.monxstar .cnt .text .website::after {
+    position: absolute;
+    right: -47px;
+    top: 0;
+    width: 48px;
+    height: 35px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='35' viewBox='0 0 48 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.6749 31.0737L10.124 29.5228L22.1469 17.5L10.124 5.47717L11.6749 3.92627L25.2487 17.5L11.6749 31.0737Z' fill='%23003E53' fill-opacity='0.6'/%3E%3Cpath d='M24.6749 31.0737L23.124 29.5228L35.1469 17.5L23.124 5.47717L24.6749 3.92627L38.2487 17.5L24.6749 31.0737Z' fill='%23003E53' fill-opacity='0.6'/%3E%3C/svg%3E%0A");
+}
+.monxstar .cnt .text .website:hover::after {
+    animation-name: web_arrow3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes web_arrow3 {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(10px, 0) }
+    100% { transform:translate(0, 0) }
+}
+.monxstar .cnt .text .website a {
+    display: block;
+    overflow: hidden;
+}
+.monxstar .cnt .text .website a strong {
+    display: block;
+    white-space: nowrap;
+    animation-name: web_move3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.monxstar .cnt .text .website a strong span {
+    display: inline-block;
+    margin: 0 0 0 16px;
+}
+
+@keyframes web_move3 {
+    0% { transform:translate(-72.3%, 0) }
+    100% { transform:translate(0, 0) }
+}
+.monxstar .cnt .mockup {
+    margin-right: -207px;
+}
+
