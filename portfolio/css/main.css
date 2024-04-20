@@ -195,6 +195,7 @@ h2 {
 .emcenter .cnt .text ul li {
     display: flex;
     margin: 0 0 20px 0;
+    color: #265705;
 }
 .emcenter .cnt .text ul li strong {
     display: block;
@@ -230,7 +231,7 @@ h2 {
     width: 408px;
     height: 34px;
     line-height: 34px;
-    border: 1px solid rgba(24, 35, 21, 0.8);
+    border: 1px solid rgba(38, 87, 5, 0.8);
     border-radius: 20px;
     position: relative;
 }
