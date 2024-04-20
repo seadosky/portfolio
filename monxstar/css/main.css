@@ -10,15 +10,15 @@ section {
 .visual {
    height: 100vh;  
    background: url(../images/main_bg.png) no-repeat center center / cover;
+
+}
+.visual .wrapper {
    position: relative;
 }
 .visual .tit {
-   position: absolute;
-   left: calc(50% - 660px);
-   top: 22%;
-   width: 1280px;
    z-index: 10;
    text-align: center;
+   margin-bottom: 14%;
 }
 .visual.active .tit {
 animation-name: visual_tit;
@@ -52,6 +52,8 @@ animation-fill-mode: forwards;
    bottom: 0;
 }
 .visual .main_ico .ico_mons {
+   top: 62%;
+   left: 5%;
    width: 1396px;
    height: 401px;
 }
@@ -69,8 +71,8 @@ animation-fill-mode: forwards;
    width: 65px;
    height: 64px;
    left: auto;
-   right: calc(50% - 166px);
-   bottom: 294px;
+   right: calc(50% - 140px);
+   bottom: calc(50% - 140px);
 }
 .visual .main_ico .ico02 {
    width: 98px;
@@ -97,9 +99,9 @@ animation-fill-mode: forwards;
    bottom: calc(75% - 10px);
 }
 .visual .main_ico .ico06 {
-   width: 395px;
-   height: 310px;
-   left: calc(71% - 10px);
+   width: 330px;
+   height: 250px;
+   left: calc(50% + 400px);
    bottom: calc(50% - 20px);
 }
 .visual .main_ico .ico07 {
