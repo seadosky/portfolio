@@ -15,7 +15,7 @@ header .link {
 header .link span {
     display: block;
     width: 105px;
-    height: 50px;
+    height: 46px;
     border-radius: 30px;
     border: 2px solid transparent;
     margin: 0 0 0 10px;
@@ -35,10 +35,10 @@ header .link .gcj {
 }
 header .link .gcj::after {
     position: absolute;
-    width: 36px;
-    height: 26px;
-    left: 33px;
-    top: 10px;
+    width: 30.3px;
+    height: 22px;
+    left: 35px;
+    top: 12px;
     content: "";
     background: url(../images/logo_gcj.png) no-repeat center center;
     background-size: contain;
@@ -48,10 +48,10 @@ header .link .em {
 }
 header .link .em::after {
     position: absolute;
-    width: 47px;
-    height: 30px;
-    left: 24px;
-    top: 3px;
+    width: 41px;
+    height: 26px;
+    left: 28px;
+    top: 8px;
     content: "";
     background: url(../images/logo_em.png) no-repeat center center;
     background-size: contain;
@@ -62,9 +62,9 @@ header .link .monx {
 }
 header .link .monx::after {
     position: absolute;
-    width: 68px;
-    height: 26px;
-    left: 18px;
+    width: 62.5px;
+    height: 24px;
+    left: 22.75px;
     top: 10px;
     content: "";
     background: url(../images/logo_monx.png) no-repeat center center;
@@ -192,7 +192,6 @@ h2 {
 .emcenter .cnt .mockup {
     margin-left: -288px;
 }
-
 .emcenter .cnt .text ul li {
     display: flex;
     margin: 0 0 20px 0;
@@ -212,6 +211,19 @@ h2 {
     font-size: 25px;
     line-height: 20px;
     margin-bottom: 5px;
+    position: relative;
+}
+.emcenter .cnt .text ul li span.name::after {
+    position: absolute;
+    right: 147px;
+    top: -24px;
+    width: 32px;
+    height: 31px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='38' height='39' viewBox='0 0 38 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_79_26)'%3E%3Cpath d='M23.0818 27.2659C23.4489 26.9218 23.7935 26.5354 24.1127 26.1434C26.948 26.8825 29.6236 27.7457 31.7372 28.5102C34.5085 29.5173 36.3048 30.3015 36.3048 30.3015C36.3048 30.3015 34.5364 29.4383 31.7985 28.3269C29.7775 27.5032 27.2113 26.5525 24.4684 25.7062C25.65 24.138 26.5332 22.285 27.1662 20.2909C33.1429 24.223 37.8623 31.0377 37.8623 31.0377C37.8623 31.0377 35.5901 30.9248 32.07 31.641C25.9478 32.8789 17.1588 35.9021 13.043 30.2072C17.1246 30.6813 20.4952 29.7027 23.0818 27.2659Z' fill='%236BA81F'/%3E%3Cpath d='M11.3763 28.4669C11.2894 28.5487 11.2054 28.6417 11.1156 28.7123C10.8102 29.0169 10.5075 29.2848 10.1992 29.5302C9.90485 29.784 9.62178 30.035 9.3386 30.2381C9.05541 30.4411 8.79468 30.6386 8.54234 30.8219C8.28434 30.9827 8.04878 31.1378 7.83285 31.276C7.41505 31.5608 7.03627 31.7159 6.79789 31.8598C6.55667 31.9923 6.43045 32.06 6.43045 32.06L5.83772 30.7456C5.83772 30.7456 5.95555 30.692 6.17715 30.5764C6.39874 30.4608 6.73828 30.3395 7.1393 30.0828C7.33561 29.9616 7.5656 29.8318 7.80399 29.688C8.03954 29.5329 8.29471 29.3608 8.55827 29.1747C8.8359 28.997 9.10219 28.7742 9.40216 28.5429C9.70497 28.3229 9.99927 28.0691 10.302 27.8012C10.6159 27.5304 10.927 27.2484 11.2436 26.941C11.5603 26.6335 11.8882 26.3233 12.2159 25.9651C12.5494 25.6295 12.8771 25.2713 13.1992 24.8905C13.5354 24.5182 13.8575 24.1375 14.1851 23.7313C15.5015 22.1293 16.792 20.3299 17.9926 18.4571C20.3965 14.7228 22.4657 10.7487 23.8883 7.71671C25.3221 4.68188 26.1375 2.60599 26.1375 2.60599C26.1375 2.60599 25.2575 4.66213 23.7393 7.6462C22.2211 10.6303 20.0394 14.5366 17.523 18.2032C16.2634 20.0309 14.9166 21.7965 13.5552 23.3618C13.2135 23.7595 12.8774 24.1318 12.5384 24.4928C12.2022 24.8651 11.8575 25.2035 11.5213 25.5279C11.1878 25.8635 10.8487 26.1766 10.5292 26.4727C10.2574 26.7209 9.99394 26.955 9.72482 27.1665C1.1122 15.0208 14.1416 9.44522 21.6182 4.80861C25.0873 2.65389 26.8776 0.800876 26.8776 0.800876C26.8439 0.809336 31.5783 32.8679 11.3763 28.4669Z' fill='%236BA81F'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_79_26'%3E%3Crect width='32.0018' height='31' fill='white' transform='matrix(-0.243611 -0.969873 -0.969873 0.243611 37.8623 31.0377)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 .emcenter .cnt .text .website {
     margin: 30px 0 0 0;
@@ -276,6 +288,21 @@ h2 {
 .monxstar {
     background: url(../images/mon_bg.png) no-repeat center center / cover;
     color: #003E53;
+}
+.monxstar .cnt .text {
+    position: relative;
+}
+.monxstar .cnt .text::after {
+    position: absolute;
+    width: 148px;
+    height: 100px;
+    top: -81px;
+    left: -107px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/mon_rocket.png);
 }
 .monxstar .cnt .text ul li {
     display: flex;
