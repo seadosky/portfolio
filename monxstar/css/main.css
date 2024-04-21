@@ -277,6 +277,7 @@ aside.quick ul li.top a::before {
    margin-right: 40px;
    position: relative;
    box-shadow: 5px 5px 10px rgba(64, 178, 242, 0.4);
+   text-align: center;
 }
 .biz .list ul li::after {
    position: absolute;
