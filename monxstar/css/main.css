@@ -210,6 +210,7 @@ aside.quick ul li.top a::before {
 }
 .biz .wrapper {
    position: relative;
+   height: 100%;
 }
 .biz h2 {
    display: none;
@@ -217,7 +218,7 @@ aside.quick ul li.top a::before {
 .biz .tit {
    position: absolute;
    left: 0;
-   top: -20px;
+   top: -80px;
    width: 100%;
    transform: rotate(-10deg);
    font-size: 150px;
@@ -263,9 +264,7 @@ aside.quick ul li.top a::before {
    100% { transform:translate(0, 0) }
 }
 .biz .list {
-   margin: 27% 0 0 0;
-   display: flex;
-   justify-content: center;
+   padding: 27% 0 0 0;
 }
 .biz .list ul {
    display: flex;
@@ -358,11 +357,14 @@ background-image: url(../images/n3.png);
 }
 .biz .monster {
    position: absolute;
-   left: 10px;
-   bottom: -16px;
+   bottom: -17px;
+   left: -40px;
+}
+.biz .monster img {
    width: 667px;
    height: 259px;
 }
+
 
 .notice {
    background: url(../images/info_bg2.png) no-repeat center center / cover;
