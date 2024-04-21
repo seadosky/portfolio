@@ -357,12 +357,12 @@ background-image: url(../images/n3.png);
 }
 .biz .monster {
    position: absolute;
-   bottom: -17px;
-   left: -40px;
+   top: calc(50% + 240px);
+   left: -35px;
 }
 .biz .monster img {
-   width: 667px;
-   height: 259px;
+   width: 566px;
+   height: 221px;
 }
 
 
