@@ -5,12 +5,12 @@
 section {
    position: relative;
    overflow: hidden;
+   height: 100vh; 
 }
 
 .visual {
-   height: 100vh;  
    background: url(../images/main_bg.png) no-repeat center center / cover;
-
+   justify-content: flex-start;
 }
 .visual .wrapper {
    position: relative;
@@ -18,7 +18,7 @@ section {
 .visual .tit {
    z-index: 10;
    text-align: center;
-   margin: 13% 0 30px 0;
+   padding: 13% 0 30px 0;
 }
 .visual.active .tit {
 animation-name: visual_tit;
@@ -357,7 +357,7 @@ background-image: url(../images/n3.png);
 }
 .biz .monster {
    position: absolute;
-   top: calc(50% + 240px);
+   top: 693px;
    left: -35px;
 }
 .biz .monster img {
@@ -951,7 +951,7 @@ margin: 10px 0 0 6.3%;
 .gallery .stars {
    position: absolute;
    left: calc(50% - 875px);
-   top: calc(50% + 120px);
+   top: 520px;
    width: 178px;
    height: 174px;
    z-index: 10;
