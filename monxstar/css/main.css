@@ -339,7 +339,7 @@ background-image: url(../images/n3.png);
 
 .biz .earth {
    position: absolute;
-   left: 31px;
+   left: 0;
    top: 22px;
 }
 .biz .earth img {
@@ -348,12 +348,12 @@ background-image: url(../images/n3.png);
 }
 .biz .moon {
    position: absolute;
-   right: 107px;
-   top: 130px;
+   right: 0;
+   top: 180px;
 }
 .biz .moon img {
-   width: 429px;
-   height: 340px;
+   width: 320px;
+   height: 252px;
 }
 .biz .monster {
    position: absolute;
