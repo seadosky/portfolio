@@ -349,11 +349,11 @@ background-image: url(../images/n3.png);
 .biz .moon {
    position: absolute;
    right: 0;
-   top: 180px;
+   top: 170px;
 }
 .biz .moon img {
-   width: 320px;
-   height: 252px;
+   width: 370px;
+   height: 292px;
 }
 .biz .monster {
    position: absolute;
@@ -820,6 +820,7 @@ margin: 10px 0 0 6.3%;
 }
 .gallery .tit {
    margin: 100px 0 0 0;
+   position: relative;
 }
 .gallery .tit h2 {
    display: flex;
@@ -828,7 +829,6 @@ margin: 10px 0 0 6.3%;
    font-size: 60px;
    font-family: 'YeongdeokSnowCrab';
    text-shadow: 5px 5px 4px rgba(255, 183, 0, 0.8);
-   position: relative;
 }
 .gallery .tit h2::after {
    position: absolute;
@@ -847,7 +847,7 @@ margin: 10px 0 0 6.3%;
 .gallery .tit .sun {
    position: absolute;
    left: calc(50% - 500px);
-   top: 25px;
+   top: -70px;
    width: 196px;
    height: 124px;
    content: "";
@@ -885,7 +885,7 @@ margin: 10px 0 0 6.3%;
 .gallery .tit .rockstar {
    position: absolute;
    left: calc(50% + 250px);
-   top: 100px;
+   top: 40px;
    width: 214px;
    height: 103px;
    animation-name: gall_rockstar;
@@ -951,7 +951,7 @@ margin: 10px 0 0 6.3%;
 .gallery .stars {
    position: absolute;
    left: calc(50% - 875px);
-   top: 61%;
+   top: calc(50% + 120px);
    width: 178px;
    height: 174px;
    z-index: 10;
