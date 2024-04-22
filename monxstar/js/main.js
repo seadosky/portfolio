@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 		navigation: true,
 		navigationPosition: 'left', 
+		anchors: ['Main', 'page2', 'page3', 'page4'],
 		navigationTooltips: ['Main', '공간소개', '이용안내', '갤러리'], 
 		showActiveTooltip: true, 
 
@@ -22,21 +23,21 @@ $(document).ready(function(){
 		responsiveWidth: 768 
 	});
 
-	const gallery_swiper = new Swiper('.gallery .swiper', { 
-	slidesPerView: 4, 
-	spaceBetween: 35, 
-	centeredSlides: true, 
-	loop: true,  
-	autoplay: {  
-		delay: 2500,
-		disableOnInteraction: true,
-	},
-});
+	$('.quick .top').on('click', function(){
+		console.log('dskfjsdkfjksdjf');
+		fullpage_api.moveTo('Main',0)
+	})
 
-$('.quick .top').on('click', function(){
-	$('html, body').animate({
-		scrollTop : 0
-	}, 500)
-})
+	const gallery_swiper = new Swiper('.gallery .swiper', { 
+		slidesPerView: 4, 
+		spaceBetween: 35, 
+		centeredSlides: true, 
+		loop: true,  
+		autoplay: {  
+			delay: 2500,
+			disableOnInteraction: true,
+		},
+	});
+
 
 })
