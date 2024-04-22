@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     const swiper = new Swiper('.swiper', { 
-        //direction: "vertical",
+        direction: "vertical",
 
         slidesPerView: 1,
         mousewheel: true,
