@@ -18,7 +18,7 @@ section {
 .visual .tit {
    z-index: 10;
    text-align: center;
-   padding: 205px 0 100px 0;
+   padding: 205px 0 116px 0;
 }
 .visual.active .tit {
 animation-name: visual_tit;
