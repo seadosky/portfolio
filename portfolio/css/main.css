@@ -388,3 +388,9 @@ h2 {
     margin-right: -207px;
 }
 
+.end {
+    background: url(../images/end_bg.png) no-repeat center center /cover;
+}
+.end h2 {
+    display: none;
+}
