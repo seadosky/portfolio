@@ -24,7 +24,6 @@ $(document).ready(function(){
 	});
 
 	$('.quick .top').on('click', function(){
-		console.log('dskfjsdkfjksdjf');
 		fullpage_api.moveTo('Main',0)
 	})
 
