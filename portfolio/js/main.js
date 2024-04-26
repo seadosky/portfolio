@@ -20,6 +20,9 @@ $(document).ready(function(){
                     $('header .link span').removeClass('on')
                     $('header .link .monx').addClass('on')
                 }
+                else if(this.realIndex == 4){
+                    $('header .link span').removeClass('on')                   
+                }
             }
         }
     });
